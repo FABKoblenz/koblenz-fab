@@ -24,3 +24,17 @@ function toggleTopNav() {
 		}
 }
 
+let currentBackgroundImage = 0;
+const maxBackgroundImages = 3;
+function changeBannerImage() {
+		if (currentBackgroundImage >= maxBackgroundImages) {
+				currentBackgroundImage = 0;
+		}
+
+		const bannerImageItem = document.getElementsByClassName("bgimg");
+		bannerImageItem[0].style.backgroundImage = "url(/assets/pool-table-0" + currentBackgroundImage + ".jpg)"
+		currentBackgroundImage++;
+}
+
+setInterval(changeBannerImage, 10000);
+
