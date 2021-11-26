@@ -26,7 +26,7 @@ body, html {
 		 background-size: cover;
 		 /* https://pixabay.com/photos/pool-table-green-flat-pool-sport-1283911/ */
 		 background-image: url("/assets/pool-table.jpg");
-		 min-height: 50%;
+		 min-height: max(50%, 550px);
  }
 
  .menu {
@@ -98,28 +98,83 @@ body, html {
 		 .right-left-direction {
 				 flex-direction: column-reverse;
 		 }
+
+		 .w3-container {
+				 scroll-margin-top: 50px;
+		 }
+ }
+
+ .topnav a {
+		 float: left;
+		 display: block;
+		 color: #f2f2f2;
+		 text-align: center;
+		 padding: 14px 16px;
+		 text-decoration: none;
+		 font-size: 17px;
+ }
+
+ .topnav .icon {
+		 display: none;
+ }
+
+ .topnav {
+		 display: flex;
+		 flex-direction: row;
+		 justify-content: space-around;
+ }
+
+ .topnav .a {
+		 flex: 1;
+ }
+
+ @media screen and (max-width: 650px) {
+		 .topnav {display: block;}
+		 .topnav a:not(:first-child) {display: none;}
+		 .topnav a.icon {
+				 float: right;
+				 display: block;
+		 }
+ }
+ @media screen and (max-width: 650px) {
+		 .topnav.responsive {position: relative;}
+		 .topnav.responsive a.icon {
+				 position: absolute;
+				 right: 0;
+				 top: 0;
+		 }
+		 .topnav.responsive a {
+				 float: none;
+				 display: block;
+				 text-align: left;
+		 }
+ }
+
+ .hamburger-line {
+  width: 35px;
+  height: 4px;
+  background-color: white;
+  margin: 5px 0;
  }
 		</style>
 		<body>
 				<!-- Links (sit on top) -->
 				<div class="w3-top">
-						<div class="w3-row w3-padding w3-black">
-								<div class="w3-col s2">
-										<a href="#" class="w3-button w3-block w3-black"><img src="/assets/fab-logo.png" height="30px">FAB</a>
+						<div class="w3-row w3-padding w3-black" style="">
+								<div class="topnav" id="topNav">
+								<a href="#" class="w3-button w3-black" onclick="closeTopNav()">
+										<img src="/assets/fab-logo.png" height="30px">FAB
+								</a>
+								<a href="#verein" class="w3-button w3-black" onclick="closeTopNav()">DER VEREIN</a>
+								<a href="#mitgliedschafft" class="w3-button w3-black" onclick="closeTopNav()">MITGLIEDSCHAFFT</a>
+								<a href="#vereinsheim" class="w3-button w3-black" onclick="closeTopNav()">VEREINSHEIM</a>
+								<a href="#" class="w3-button w3-black" onclick="closeTopNav()">LIGABETRIEB</a>
+								<a href="javascript:void(0);" class="icon" onclick="toggleTopNav()">
+										<div class="hamburger-line"></div>
+										<div class="hamburger-line"></div>
+										<div class="hamburger-line"></div>
+								</a>
 								</div>
-								<div class="w3-col s2">
-										<a href="#verein" class="w3-button w3-block w3-black">DER VEREIN</a>
-								</div>
-								<div class="w3-col s2">
-										<a href="#mitgliedschafft" class="w3-button w3-block w3-black">MITGLIEDSCHAFFT</a>
-								</div>
-								<div class="w3-col s2">
-										<a href="#vereinsheim" class="w3-button w3-block w3-black">VEREINSHEIM</a>
-								</div>
-								<div class="w3-col s2">
-										<a href="#" class="w3-button w3-block w3-black">LIGABETRIEB</a>
-								</div>
-
 						</div>
 				</div>
 
@@ -162,7 +217,7 @@ body, html {
 						</div>
 				</div>
 				<div class="w3-large">
-						<div class="w3-container" id="verein">
+						<div class="w3-container">
 								<div class="w3-content fab-content-width right-left-direction text-section">
 										<div style="flex: 1">
 												<div class="w3-panel w3-leftbar w3-light-grey">
@@ -211,7 +266,7 @@ body, html {
 
 								</div>
 						</div>
-						<div class="w3-container" id="vereinsheim">
+						<div class="w3-container">
 								<div class="w3-content fab-content-width">
 										<div class="w3-panel w3-leftbar w3-light-grey">
 												<p>
@@ -232,7 +287,7 @@ body, html {
 										</div>
 								</div>
 						</div>
-						<div class="w3-container" id="vereinsheim">
+						<div class="w3-container">
 								<div class="w3-content fab-content-width">
 										<div class="w3-panel w3-leftbar w3-light-grey">
 												<p>
@@ -257,7 +312,6 @@ body, html {
 										</div>
 								</div>
 						</div>
-
 						<div class="w3-container" id="vereinsheim">
 								<div class="w3-content fab-content-width">
 										<h5 class="w3-center w3-padding-32"><span class="w3-wide fab-title fab-section-title">Vereinsheim</span></h5>
@@ -276,10 +330,8 @@ body, html {
 
 								</div>
 						</div>
-
 				</div>
 				<div id="map"></div>
-
 				<!-- Footer -->
 				<footer class="w3-light-grey w3-padding-48 w3-large" style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap">
 						<p><a href="" title="" target="_blank" class="w3-hover-text-green">Datenschutzerkl&auml;rung</a></p>
@@ -297,6 +349,19 @@ body, html {
 										position: fab_loc,
 										map: map,
 								});
+						}
+
+						function closeTopNav() {
+								const x = document.getElementById("topNav");
+								x.className = "topnav";
+						}
+						function toggleTopNav() {
+								const x = document.getElementById("topNav");
+								if (x.className === "topnav") {
+										x.className += " responsive";
+								} else {
+										x.className = "topnav";
+								}
 						}
 				</script>
 				<script async
