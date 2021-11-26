@@ -21,10 +21,55 @@ body, html {
 		display: none;
 }
 
+.fab-page-title {
+		background-color: rgba(255, 255, 255, 0.6);
+		border-radius: 10px;
+		padding: 30px;
+}
+
 .fab-title {
 		color: #005a84;
+}
+.fab-section-title {
+		font-size:1.3em;
 		font-weight: bold;
 }
+
+.slideshow-container {
+		max-width: 1000px;
+		position: relative;
+		margin: auto;
+}
+.numbertext {
+		color: #f2f2f2;
+		font-size: 12px;
+		padding: 8px 12px;
+		position: absolute;
+		top: 0;
+}
+.active {
+		background-color: #717171;
+}
+.fade {
+		-webkit-animation-name: fade;
+		-webkit-animation-duration: 1.5s;
+		animation-name: fade;
+		animation-duration: 1.5s;
+}
+		  @-webkit-keyframes fade {
+				  from {opacity: .4} 
+				  to {opacity: 1}
+		  }
+
+		  @keyframes fade {
+				  from {opacity: .4} 
+				  to {opacity: 1}
+		  }
+
+		  /* On smaller screens, decrease text size */
+		  @media only screen and (max-width: 300px) {
+				  .text {font-size: 11px}
+		  }
 		</style>
 		<body>
 				<!-- Links (sit on top) -->
@@ -37,13 +82,13 @@ body, html {
 										<a href="#verein" class="w3-button w3-block w3-black">DER VEREIN</a>
 								</div>
 								<div class="w3-col s2">
-										<a href="#menu" class="w3-button w3-block w3-black">MITGLIEDSCHAFFT</a>
+										<a href="#mitgliedschafft" class="w3-button w3-block w3-black">MITGLIEDSCHAFFT</a>
 								</div>
 								<div class="w3-col s2">
-										<a href="#where" class="w3-button w3-block w3-black">VEREINSHEIM</a>
+										<a href="#vereinsheim" class="w3-button w3-block w3-black">VEREINSHEIM</a>
 								</div>
 								<div class="w3-col s2">
-										<a href="#where" class="w3-button w3-block w3-black">LIGABETRIEB</a>
+										<a href="/ligabetrieb" class="w3-button w3-block w3-black">LIGABETRIEB</a>
 								</div>
 
 						</div>
@@ -51,19 +96,18 @@ body, html {
 
 				<!-- Header with image -->
 				<header class="bgimg w3-display-container w3-grayscale-min" id="home">
-						<div class="w3-display-middle w3-center w3-light-grey">
+						<div class="w3-display-middle w3-center fab-page-title">
 								<img>
-								<span class="" style="font-size: 10vw; ">Billard Team FAB Koblenz e.V.</span>
+								<span class="fab-title" style="font-size: 8vw; ">Billard Team FAB Koblenz e.V.</span>
 						</div>
 				</header>
 
 				<!-- Add a background color and large text to the whole page -->
 				<div class="w3-sand w3-grayscale w3-large">
 
-						<!-- About Container -->
 						<div class="w3-container" id="verein">
 								<div class="w3-content" style="max-width:700px">
-										<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide fab-title">Dein Verein für Pool und Snooker in Koblenz</span></h5>
+										<h5 class="w3-center w3-padding-32"><span class="w3-wide fab-title fab-section-title" style="">Dein Verein für Pool und Snooker in Koblenz</span></h5>
 										<p>
 										<b>Herzlich Willkommen beim Billiard Team FAB Koblenz e.V.</b><br>
 										Gegründet wurde unser Verein im Jahr 2006. Über verschiedene Spielorte führte uns unser Weg nach Koblenz Bubenheim.<br>
@@ -76,24 +120,130 @@ body, html {
 										<div class="w3-panel w3-leftbar w3-light-grey">
 												<p>
 												<span class="fab-title">NEUGIERIG GEWORDEN?</span><br>
-														Du möchtest auch <b>FAB</b>ianer werden?<br>
-														Das ist eine gute Entscheidung!<br>
-														<br>
-														<b>Wir empfehlen dir</b>, erst mal bei uns vorbei zu schnuppern. Schau dir unsere Räumlichkeiten in aller Ruhe an und lass alles ein bisschen auf Dich wirken. Spiel ein paar Bälle und lass uns ein bisschen über uns und über Billard reden.</br>
-														<br>
-														Freies Schnuppertraining<br>
-														Jeden Samstag<br>
-														10:00 Uhr - 12:00 Uhr
+												Du möchtest auch <b>FAB</b>ianer werden?<br>
+												Das ist eine gute Entscheidung!<br>
+												<br>
+												<b>Wir empfehlen dir</b>, erst mal bei uns vorbei zu schnuppern. Schau dir unsere Räumlichkeiten in aller Ruhe an und lass alles ein bisschen auf Dich wirken. Spiel ein paar Bälle und lass uns ein bisschen über uns und über Billard reden.</br>
+												<br>
+												Freies Schnuppertraining<br>
+												Jeden Samstag<br>
+												10:00 Uhr - 12:00 Uhr
 												</p>
 										</div>
 								</div>
 						</div>
+						<div class="slideshow-container">
+								<div class="slide">
+										<div class="numbertext">1 / 3</div>
+										<img src="/assets/fab-slideshow/img1.jpg" style="width:100%">
+								</div>
+
+								<div class="slide">
+										<div class="numbertext">2 / 3</div>
+										<img src="/assets/fab-slideshow/img2.jpg" style="width:100%">
+								</div>
+
+								<div class="slide">
+										<div class="numbertext">3 / 3</div>
+										<img src="/assets/fab-slideshow/img3.jpg" style="width:100%">
+								</div>
+						</div>
+
+				</div>
+				<br>
+
+				<div style="text-align:center">
+						<span class="dot"></span> 
+						<span class="dot"></span> 
+						<span class="dot"></span> 
+				</div>
+
+				<div class="w3-container" id="mitgliedschafft">
+						<div class="w3-content" style="max-width:700px">
+								<h5 class="w3-center w3-padding-32"><span class="w3-wide fab-title fab-section-title">Du möchtest Mitglied beim FAB werden?</span></h5>
+								<p>
+								Das ist eine gute Entscheidung, denn neben den ganzen <b>Vorteilen</b> die <b>Billardsport</b> für dich bringt, bietet dir eine Mitgliedschaft beim FAB einiges an tollen Möglichkeiten.<br>
+								<br>
+								ju hast die Möglichkeit am regelmäßigen Training teilzunehmen, spielst auf Wunsch in verschiedenen Mannschaften im Rheinland-Pfäzer Ligabetrieb mit, kannst verschiedene Einzelwettkämpfe bestreiten und trittst, wenn du willst bei einigen Turnieren an.<br>
+								<br>
+								<b>Wettkampf?</b> Das ist nichts für dich! Das FAB bietet neben dem sportlichen Aspekt auch einiges an Flair. Durch die eigenen Vereinsräume setzen wir bei Spielmaterial auf Top Qualität und Pflege, <b>die Atmosphäre</b> in unseren Vereinsräumen ist <b>auf Billard abgestimmt</b> und verleitet den ein oder anderen dazu lange Sessions zu spielen. Triff dich mit Gleichgesinnten zum Training und knüpfe neue Bekanntschaften aus denen sich, aus guter Erfahrung, auch viele echte Freundschaften entwickeln können.<br>
+								<br>
+								Jeder <b>FABianer (Vollmitglied)</b> erhält nach 3 Monaten einen <b>Schlüssel zu den Vereinsräumen</b> und kann somit jederzeit seinem Drang nach Billardsport oder Spiel, 24 Stunden / 7 Tage die Woche, freien Lauf lassen.<br>
+								<br>
+								Was musst du tun um Mitglied beim FAB zu werden?<br>
+								<br>
+								<b>Wir empfehlen dir</b>, erst mal bei uns vorbei zu schnuppern. Schau dir in aller Ruhe unsere Räumlichkeiten an und lass alles ein bisschen auf Dich wirken.Ein gute Möglichkeit hierzu ist z.B. unser <b>freies Schnuppertraining</b>, welches jeden <b>Samstag zwischen 10:00 Uhr und 12:00</b> Uhr stattfindet.Du kannst samstags nicht? Dann nimm einfach Kontakt mit uns auf und wir finden schnell einen passenden Termin für Dich!<br>
+								<br>
+								Wir <b>freuen uns auf Dich!</b><br>
+								<div class="w3-panel w3-leftbar w3-light-grey">
+										<p>
+										<span class="fab-title">ZAHLEN UND FAKTEN</span><br>
+										<ul>
+												<li>24 Stunden Zugang für Vereinsmitglieder</li>
+												<li>1 Snooker- und 3 Pool Tische</li>
+												<li>hochwertiges Spielmaterial</li>
+												<li>Parkplätze vor der Tür</li>
+												<li>Trainer und Jugendtrainer</li>
+												<li>Sonderkonditionen für Jugendliche</li>
+												<li>kostengünstige Getränke und Speisen</li>
+												<li>Vereinstraining</li>
+												<li>Ligabetrieb</li>
+												<li>freies WLAN im Vereinsheim</li>
+										</ul>
+										</p>
+								</div>
+								<div class="w3-panel w3-leftbar w3-light-grey">
+										<p>
+										<span class="fab-title">MONATLICHE MITGLIEDSBEITRÄGE</span><br>
+										Pool Billard
+										<ul>
+												<li>10,- EUR für Jugendliche unter 18 Jahren</li>
+												<li>10,- EUR für Studenten</li>
+												<li>30,- EUR für passive Spieler</li>
+												<li>40,- EUR für aktive Spieler **</li>
+												<li>60,- EUR für Paare</li>
+										</ul>
+
+										Snooker
+										<ul>
+												<li>50,-EUR für Erwachsene Spieler</li>
+										</ul>
+
+										<small>** aktiv bedeutet, am Ligaspielbetrieb teilnehmend</small>
+										</ul>
+										</p>
+
+								</div>
+						</div>
+				</div>
+
 				<!-- Footer -->
 				<footer class="w3-light-grey w3-padding-48 w3-large" style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap">
 						<p><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Datenschutzerkl&auml;rung</a></p>
 						<p><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Kontakt</a></p>
 						<p><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Impressum</a></p>
 				</footer>
+				<script>
+						var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("slide");
+		var dots = document.getElementsByClassName("dot");
+		for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}
+		for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " active";
+		setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+				</script>
 		</body>
 </html>
 
