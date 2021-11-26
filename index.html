@@ -48,7 +48,7 @@ body, html {
  }
 
  .fab-content-width {
-		 max-width: 800px;
+		 max-width: 1400px;
  }
 
  .slideshow-container {
@@ -66,25 +66,34 @@ body, html {
  .active {
 		 background-color: #717171;
  }
- .fade {
-		 -webkit-animation-name: fade;
-		 -webkit-animation-duration: 1.5s;
-		 animation-name: fade;
-		 animation-duration: 1.5s;
- }
- @-webkit-keyframes fade {
-		 from {opacity: .4} 
-		 to {opacity: 1}
- }
 
- @keyframes fade {
-		 from {opacity: .4} 
-		 to {opacity: 1}
+ .text-section {
+		 display: flex;
+		 padding: 15px;
+ }
+ .text-section > div {
+		 padding: 15px;
  }
 
  /* On smaller screens, decrease text size */
  @media only screen and (max-width: 300px) {
 		 .text {font-size: 11px}
+ }
+
+ .left-right-direction {
+		 flex-direction: row ;
+ }
+ .right-left-direction {
+		 flex-direction: row-reverse;
+ }
+
+ @media only screen and (max-width: 1200px) {
+		 .left-right-direction {
+				 flex-direction: column-reverse ;
+		 }
+		 .right-left-direction {
+				 flex-direction: column-reverse;
+		 }
  }
 		</style>
 		<body>
@@ -123,73 +132,83 @@ body, html {
 				</header>
 
 				<!-- Add a background color and large text to the whole page -->
-				<div class="w3-sand w3-grayscale w3-large">
-
+				<div class="w3-large">
 						<div class="w3-container" id="verein">
-								<div class="w3-content fab-content-width">
-										<h5 class="w3-center w3-padding-32"><span class="w3-wide fab-title fab-section-title" style="">Dein Verein für Pool und Snooker in Koblenz</span></h5>
-										<p>
-										<b>Herzlich Willkommen beim Billiard Team FAB Koblenz e.V.</b><br>
-										Gegründet wurde unser Verein im Jahr 2006. Über verschiedene Spielorte führte uns unser Weg nach Koblenz Bubenheim.<br>
-										Hier verwirklichten wir die Entstehung eines <b>eigenen Vereinsheimes</b>, getragen und gestaltet durch die eigenen Mitglieder.<br>
-										<br>
-										Unsere Mitglieder sind eine bunte Truppe und finden sich aus allen Altersgruppen bei uns zusammen.<br>
-										Sie spielen regelmäßig in den Ligamannschaften, sowie in vielen Einzeldisziplinen und Pokalmeisterschaften oder aber auch einfach nur aus Freude am Spiel.<br>
-										<br>
-										Ob Frau oder Mann, ob alt oder jung, ob blutiger Anfänger oder erfahrener Taktik-Fuchs: Beim FAB Koblenz kann man sich wohl fühlen.<br>
-										<b>Vielleicht ja demnächst auch Du!</b><br></p>
-										<div class="w3-panel w3-leftbar w3-light-grey">
+								<div class="w3-content fab-content-width left-right-direction text-section">
+										<div style="flex: 1">
+												<h5 class="w3-center w3-padding-32">
+														<span class="w3-wide fab-title fab-section-title">Dein Verein für Pool und Snooker in Koblenz</span>
+												</h5>
 												<p>
-												<span class="fab-title">NEUGIERIG GEWORDEN?</span><br>
-												Du möchtest auch <b>FAB</b>ianer werden?<br>
-												Das ist eine gute Entscheidung!<br>
+												<b>Herzlich Willkommen beim Billiard Team FAB Koblenz e.V.</b><br>
+												Gegründet wurde unser Verein im Jahr 2006. Über verschiedene Spielorte führte uns unser Weg nach Koblenz Bubenheim.<br>
+												Hier verwirklichten wir die Entstehung eines <b>eigenen Vereinsheimes</b>, getragen und gestaltet durch die eigenen Mitglieder.<br>
 												<br>
-												<b>Wir empfehlen dir</b>, erst mal bei uns vorbei zu schnuppern. Schau dir unsere Räumlichkeiten in aller Ruhe an und lass alles ein bisschen auf Dich wirken. Spiel ein paar Bälle und lass uns ein bisschen über uns und über Billard reden.</br>
+												Unsere Mitglieder sind eine bunte Truppe und finden sich aus allen Altersgruppen bei uns zusammen.<br>
+												Sie spielen regelmäßig in den Ligamannschaften, sowie in vielen Einzeldisziplinen und Pokalmeisterschaften oder aber auch einfach nur aus Freude am Spiel.<br>
 												<br>
-												Freies Schnuppertraining<br>
-												Jeden Samstag<br>
-												10:00 Uhr - 12:00 Uhr
-												</p>
+												Ob Frau oder Mann, ob alt oder jung, ob blutiger Anfänger oder erfahrener Taktik-Fuchs: Beim FAB Koblenz kann man sich wohl fühlen.<br>
+												<b>Vielleicht ja demnächst auch Du!</b><br></p>
+										</div>
+
+										<div style="flex: 1; display: flex; justify-content: center; align-items: center; ">
+												<img src="/assets/fab-slideshow/img1.jpg" style="width:100%; flex: 1">
 										</div>
 								</div>
 						</div>
 				</div>
-				<div class="slideshow-container">
-						<div class="slide">
-								<div class="numbertext">1 / 3</div>
-								<img src="/assets/fab-slideshow/img1.jpg" style="width:100%">
-						</div>
+				<div class="w3-large">
+						<div class="w3-container" id="verein">
+								<div class="w3-content fab-content-width right-left-direction text-section">
+										<div style="flex: 1">
+												<div class="w3-panel w3-leftbar w3-light-grey">
+														<p>
+														<span class="fab-title">NEUGIERIG GEWORDEN?</span><br>
+														Du möchtest auch <b>FAB</b>ianer werden?<br>
+														Das ist eine gute Entscheidung!<br>
+														<br>
+														<b>Wir empfehlen dir</b>, erst mal bei uns vorbei zu schnuppern. Schau dir unsere Räumlichkeiten in aller Ruhe an und lass alles ein bisschen auf Dich wirken. Spiel ein paar Bälle und lass uns ein bisschen über uns und über Billard reden.</br>
+														<br>
+														Freies Schnuppertraining<br>
+														Jeden Samstag<br>
+														10:00 Uhr - 12:00 Uhr
+														</p>
+												</div>
 
-						<div class="slide">
-								<div class="numbertext">2 / 3</div>
-								<img src="/assets/fab-slideshow/img2.jpg" style="width:100%">
-						</div>
-
-						<div class="slide">
-								<div class="numbertext">3 / 3</div>
-								<img src="/assets/fab-slideshow/img3.jpg" style="width:100%">
+										</div>
+										<div style="flex: 1; display: flex; justify-content: center; align-items: center; ">
+												<img src="/assets/fab-slideshow/img3.jpg" style="width:100%; flex: 1">
+										</div>
+								</div>
 						</div>
 				</div>
 
-
-				<div class="w3-sand w3-grayscale w3-large">
+				<div class="w3-large">
 						<div class="w3-container" id="mitgliedschafft">
+								<div class="w3-content fab-content-width left-right-direction text-section">
+										<div style="flex: 1">
+												<h5 class="w3-center w3-padding-32"><span class="w3-wide fab-title fab-section-title">Du möchtest Mitglied beim FAB werden?</span></h5>
+												<p>
+												Das ist eine gute Entscheidung, denn neben den ganzen <b>Vorteilen</b> die <b>Billardsport</b> für dich bringt, bietet dir eine Mitgliedschaft beim FAB einiges an tollen Möglichkeiten.<br>
+												<br>
+												Du hast die Möglichkeit am regelmäßigen Training teilzunehmen, spielst auf Wunsch in verschiedenen Mannschaften im Rheinland-Pfäzer Ligabetrieb mit, kannst verschiedene Einzelwettkämpfe bestreiten und trittst, wenn du willst bei einigen Turnieren an.<br>
+												<br>
+												<b>Wettkampf?</b> Das ist nichts für dich! Das FAB bietet neben dem sportlichen Aspekt auch einiges an Flair. Durch die eigenen Vereinsräume setzen wir bei Spielmaterial auf Top Qualität und Pflege, <b>die Atmosphäre</b> in unseren Vereinsräumen ist <b>auf Billard abgestimmt</b> und verleitet den ein oder anderen dazu lange Sessions zu spielen. Triff dich mit Gleichgesinnten zum Training und knüpfe neue Bekanntschaften aus denen sich, aus guter Erfahrung, auch viele echte Freundschaften entwickeln können.<br>
+												<br>
+												Jeder <b>FABianer (Vollmitglied)</b> erhält nach 3 Monaten einen <b>Schlüssel zu den Vereinsräumen</b> und kann somit jederzeit seinem Drang nach Billardsport oder Spiel, 24 Stunden / 7 Tage die Woche, freien Lauf lassen.<br>
+												<br>
+												Wir <b>freuen uns auf Dich!</b><br>
+
+										</div>
+
+										<div style="flex: 1; display: flex; justify-content: center; align-items: center; ">
+												<img src="/assets/fab-slideshow/img2.jpg" style="width:100%; flex: 1">
+										</div>
+
+								</div>
+						</div>
+						<div class="w3-container" id="vereinsheim">
 								<div class="w3-content fab-content-width">
-										<h5 class="w3-center w3-padding-32"><span class="w3-wide fab-title fab-section-title">Du möchtest Mitglied beim FAB werden?</span></h5>
-										<p>
-										Das ist eine gute Entscheidung, denn neben den ganzen <b>Vorteilen</b> die <b>Billardsport</b> für dich bringt, bietet dir eine Mitgliedschaft beim FAB einiges an tollen Möglichkeiten.<br>
-										<br>
-										ju hast die Möglichkeit am regelmäßigen Training teilzunehmen, spielst auf Wunsch in verschiedenen Mannschaften im Rheinland-Pfäzer Ligabetrieb mit, kannst verschiedene Einzelwettkämpfe bestreiten und trittst, wenn du willst bei einigen Turnieren an.<br>
-										<br>
-										<b>Wettkampf?</b> Das ist nichts für dich! Das FAB bietet neben dem sportlichen Aspekt auch einiges an Flair. Durch die eigenen Vereinsräume setzen wir bei Spielmaterial auf Top Qualität und Pflege, <b>die Atmosphäre</b> in unseren Vereinsräumen ist <b>auf Billard abgestimmt</b> und verleitet den ein oder anderen dazu lange Sessions zu spielen. Triff dich mit Gleichgesinnten zum Training und knüpfe neue Bekanntschaften aus denen sich, aus guter Erfahrung, auch viele echte Freundschaften entwickeln können.<br>
-										<br>
-										Jeder <b>FABianer (Vollmitglied)</b> erhält nach 3 Monaten einen <b>Schlüssel zu den Vereinsräumen</b> und kann somit jederzeit seinem Drang nach Billardsport oder Spiel, 24 Stunden / 7 Tage die Woche, freien Lauf lassen.<br>
-										<br>
-										Was musst du tun um Mitglied beim FAB zu werden?<br>
-										<br>
-										<b>Wir empfehlen dir</b>, erst mal bei uns vorbei zu schnuppern. Schau dir in aller Ruhe unsere Räumlichkeiten an und lass alles ein bisschen auf Dich wirken.Ein gute Möglichkeit hierzu ist z.B. unser <b>freies Schnuppertraining</b>, welches jeden <b>Samstag zwischen 10:00 Uhr und 12:00</b> Uhr stattfindet.Du kannst samstags nicht? Dann nimm einfach Kontakt mit uns auf und wir finden schnell einen passenden Termin für Dich!<br>
-										<br>
-										Wir <b>freuen uns auf Dich!</b><br>
 										<div class="w3-panel w3-leftbar w3-light-grey">
 												<p>
 												<span class="fab-title">ZAHLEN UND FAKTEN</span><br>
@@ -207,6 +226,10 @@ body, html {
 												</ul>
 												</p>
 										</div>
+								</div>
+						</div>
+						<div class="w3-container" id="vereinsheim">
+								<div class="w3-content fab-content-width">
 										<div class="w3-panel w3-leftbar w3-light-grey">
 												<p>
 												<span class="fab-title">MONATLICHE MITGLIEDSBEITRÄGE</span><br>
@@ -230,6 +253,7 @@ body, html {
 										</div>
 								</div>
 						</div>
+
 						<div class="w3-container" id="vereinsheim">
 								<div class="w3-content fab-content-width">
 										<h5 class="w3-center w3-padding-32"><span class="w3-wide fab-title fab-section-title">Vereinsheim</span></h5>
@@ -259,31 +283,17 @@ body, html {
 						<p><a href="" title="" target="_blank" class="w3-hover-text-green">Impressum</a></p>
 				</footer>
 				<script>
-						var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-		var i;
-		var slides = document.getElementsByClassName("slide");
-		for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";  
-		}
-		slideIndex++;
-		if (slideIndex > slides.length) {slideIndex = 1}
-		slides[slideIndex-1].style.display = "block";  
-		setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-function initMap() {
-		const fab_loc = { lat: 50.38028649499958, lng: 7.54943587324097}
-		const map = new google.maps.Map(document.getElementById("map"), {
-				zoom: 18,
-				center: fab_loc,
-		});
-		const marker = new google.maps.Marker({
-				position: fab_loc,
-				map: map,
-		});
-}
+						function initMap() {
+								const fab_loc = { lat: 50.38028649499958, lng: 7.54943587324097}
+								const map = new google.maps.Map(document.getElementById("map"), {
+										zoom: 18,
+										center: fab_loc,
+								});
+								const marker = new google.maps.Marker({
+										position: fab_loc,
+										map: map,
+								});
+						}
 				</script>
 				<script async
 						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANZ01Pxsor8k7sfXZ27kiS_-b3i7G3aps&callback=initMap">
