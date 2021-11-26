@@ -8,164 +8,18 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="/css/w3.css">
-		<style>
-body, html {
-		height: 100%;
-		font-family: 'Poppins', sans-serif;
-}
-
- #map {
-		 height: 400px;
-		 width: 100%;
- }
-
- .bgimg {
-		 background-position: center;
-		 background-size: cover;
-		 /* https://pixabay.com/photos/pool-table-green-flat-pool-sport-1283911/ */
-		 background-image: url("/assets/pool-table.jpg");
-		 min-height: max(50%, 550px);
- }
-
- .menu {
-		 display: none;
- }
-
- .fab-page-title {
-		 background-color: rgba(255, 255, 255, 0.6);
-		 border-radius: 10px;
-		 padding: 30px;
- }
-
- .fab-page-title-text {
-		 font-size: min(6vw, 70px); 
- }
-
- .fab-title {
-		 color: #005a84;
- }
- .fab-section-title {
-		 font-size:1.3em;
-		 font-weight: bold;
- }
-
- .fab-content-width {
-		 max-width: 1400px;
- }
-
- .slideshow-container {
-		 max-width: 1000px;
-		 position: relative;
-		 margin: auto;
- }
- .numbertext {
-		 color: #f2f2f2;
-		 font-size: 12px;
-		 padding: 8px 12px;
-		 position: absolute;
-		 top: 0;
- }
- .active {
-		 background-color: #717171;
- }
-
- .text-section {
-		 display: flex;
-		 padding: 15px;
- }
- .text-section > div {
-		 padding: 15px;
- }
-
- /* On smaller screens, decrease text size */
- @media only screen and (max-width: 300px) {
-		 .text {font-size: 11px}
- }
-
- .left-right-direction {
-		 flex-direction: row ;
- }
- .right-left-direction {
-		 flex-direction: row-reverse;
- }
-
- @media only screen and (max-width: 1200px) {
-		 .left-right-direction {
-				 flex-direction: column-reverse ;
-		 }
-		 .right-left-direction {
-				 flex-direction: column-reverse;
-		 }
-
-		 .w3-container {
-				 scroll-margin-top: 50px;
-		 }
- }
-
- .topnav a {
-		 float: left;
-		 display: block;
-		 color: #f2f2f2;
-		 text-align: center;
-		 padding: 14px 16px;
-		 text-decoration: none;
-		 font-size: 17px;
- }
-
- .topnav .icon {
-		 display: none;
- }
-
- .topnav {
-		 display: flex;
-		 flex-direction: row;
-		 justify-content: space-around;
- }
-
- .topnav .a {
-		 flex: 1;
- }
-
- @media screen and (max-width: 650px) {
-		 .topnav {display: block;}
-		 .topnav a:not(:first-child) {display: none;}
-		 .topnav a.icon {
-				 float: right;
-				 display: block;
-		 }
- }
- @media screen and (max-width: 650px) {
-		 .topnav.responsive {position: relative;}
-		 .topnav.responsive a.icon {
-				 position: absolute;
-				 right: 0;
-				 top: 0;
-		 }
-		 .topnav.responsive a {
-				 float: none;
-				 display: block;
-				 text-align: left;
-		 }
- }
-
- .hamburger-line {
-		 width: 35px;
-		 height: 4px;
-		 background-color: white;
-		 margin: 5px 0;
- }
-		</style>
+		<link rel="stylesheet" href="/css/main.css">
 		<body>
 				<!-- Links (sit on top) -->
 				<div class="w3-top">
 						<div class="w3-row w3-padding w3-black" style="">
 								<div class="topnav" id="topNav">
-										<a href="#" class="w3-button w3-black" onclick="closeTopNav()">
+										<a href="/#" class="w3-button w3-black" onclick="closeTopNav()">
 												<img src="/assets/fab-logo.png" height="30px">FAB
 										</a>
-										<a href="#verein" class="w3-button w3-black" onclick="closeTopNav()">DER VEREIN</a>
-										<a href="#mitgliedschafft" class="w3-button w3-black" onclick="closeTopNav()">MITGLIEDSCHAFFT</a>
-										<a href="#vereinsheim" class="w3-button w3-black" onclick="closeTopNav()">VEREINSHEIM</a>
+										<a href="/#verein" class="w3-button w3-black" onclick="closeTopNav()">DER VEREIN</a>
+										<a href="/#mitgliedschafft" class="w3-button w3-black" onclick="closeTopNav()">MITGLIEDSCHAFFT</a>
+										<a href="/#vereinsheim" class="w3-button w3-black" onclick="closeTopNav()">VEREINSHEIM</a>
 										<a href="#" class="w3-button w3-black" onclick="closeTopNav()">LIGABETRIEB</a>
 										<a href="javascript:void(0);" class="icon" onclick="toggleTopNav()">
 												<div class="hamburger-line"></div>
@@ -330,36 +184,11 @@ body, html {
 				<div id="map"></div>
 				<!-- Footer -->
 				<footer class="w3-light-grey w3-padding-48 w3-large" style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap">
-						<p><a href="" title="" target="_blank" class="w3-hover-text-green">Datenschutzerkl&auml;rung</a></p>
-						<p><a href="" title="" target="_blank" class="w3-hover-text-green">Kontakt</a></p>
-						<p><a href="" title="" target="_blank" class="w3-hover-text-green">Impressum</a></p>
+						<p><a href="" title="" class="w3-hover-text-green">Datenschutzerkl&auml;rung</a></p>
+						<p><a href="" title="" class="w3-hover-text-green">Kontakt</a></p>
+						<p><a href="" title="" class="w3-hover-text-green">Impressum</a></p>
 				</footer>
-				<script>
-						function initMap() {
-								const fab_loc = { lat: 50.38028649499958, lng: 7.54943587324097}
-								const map = new google.maps.Map(document.getElementById("map"), {
-										zoom: 18,
-										center: fab_loc,
-								});
-								const marker = new google.maps.Marker({
-										position: fab_loc,
-										map: map,
-								});
-						}
-
-function closeTopNav() {
-		const x = document.getElementById("topNav");
-		x.className = "topnav";
-}
-function toggleTopNav() {
-		const x = document.getElementById("topNav");
-		if (x.className === "topnav") {
-				x.className += " responsive";
-		} else {
-				x.className = "topnav";
-		}
-}
-				</script>
+				<script src="/js/main.js"></script>
 				<script async
 						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANZ01Pxsor8k7sfXZ27kiS_-b3i7G3aps&callback=initMap">
 				</script>
