@@ -16,9 +16,7 @@ body, html {
 
  #map {
 		 height: 400px;
-		 /* The height is 400 pixels */
 		 width: 100%;
-		 /* The width is the width of the web page */
  }
 
  .bgimg {
@@ -151,10 +149,10 @@ body, html {
  }
 
  .hamburger-line {
-  width: 35px;
-  height: 4px;
-  background-color: white;
-  margin: 5px 0;
+		 width: 35px;
+		 height: 4px;
+		 background-color: white;
+		 margin: 5px 0;
  }
 		</style>
 		<body>
@@ -162,18 +160,18 @@ body, html {
 				<div class="w3-top">
 						<div class="w3-row w3-padding w3-black" style="">
 								<div class="topnav" id="topNav">
-								<a href="#" class="w3-button w3-black" onclick="closeTopNav()">
-										<img src="/assets/fab-logo.png" height="30px">FAB
-								</a>
-								<a href="#verein" class="w3-button w3-black" onclick="closeTopNav()">DER VEREIN</a>
-								<a href="#mitgliedschafft" class="w3-button w3-black" onclick="closeTopNav()">MITGLIEDSCHAFFT</a>
-								<a href="#vereinsheim" class="w3-button w3-black" onclick="closeTopNav()">VEREINSHEIM</a>
-								<a href="#" class="w3-button w3-black" onclick="closeTopNav()">LIGABETRIEB</a>
-								<a href="javascript:void(0);" class="icon" onclick="toggleTopNav()">
-										<div class="hamburger-line"></div>
-										<div class="hamburger-line"></div>
-										<div class="hamburger-line"></div>
-								</a>
+										<a href="#" class="w3-button w3-black" onclick="closeTopNav()">
+												<img src="/assets/fab-logo.png" height="30px">FAB
+										</a>
+										<a href="#verein" class="w3-button w3-black" onclick="closeTopNav()">DER VEREIN</a>
+										<a href="#mitgliedschafft" class="w3-button w3-black" onclick="closeTopNav()">MITGLIEDSCHAFFT</a>
+										<a href="#vereinsheim" class="w3-button w3-black" onclick="closeTopNav()">VEREINSHEIM</a>
+										<a href="#" class="w3-button w3-black" onclick="closeTopNav()">LIGABETRIEB</a>
+										<a href="javascript:void(0);" class="icon" onclick="toggleTopNav()">
+												<div class="hamburger-line"></div>
+												<div class="hamburger-line"></div>
+												<div class="hamburger-line"></div>
+										</a>
 								</div>
 						</div>
 				</div>
@@ -267,48 +265,46 @@ body, html {
 								</div>
 						</div>
 						<div class="w3-container">
-								<div class="w3-content fab-content-width">
-										<div class="w3-panel w3-leftbar w3-light-grey">
-												<p>
-												<span class="fab-title">ZAHLEN UND FAKTEN</span><br>
-												<ul>
-														<li>24 Stunden Zugang für Vereinsmitglieder</li>
-														<li>1 Snooker- und 3 Pool Tische</li>
-														<li>hochwertiges Spielmaterial</li>
-														<li>Parkplätze vor der Tür</li>
-														<li>Trainer und Jugendtrainer</li>
-														<li>Sonderkonditionen für Jugendliche</li>
-														<li>kostengünstige Getränke und Speisen</li>
-														<li>Vereinstraining</li>
-														<li>Ligabetrieb</li>
-														<li>freies WLAN im Vereinsheim</li>
-												</ul>
-												</p>
+								<div class="w3-content fab-content-width right-left-direction text-section">
+										<div style="flex: 1">
+												<div class="w3-panel w3-leftbar w3-light-grey" style="min-height: 380px">
+														<p>
+														<span class="fab-title">MONATLICHE MITGLIEDSBEITRÄGE</span><br>
+														Pool Billard
+														<ul>
+																<li>10,- EUR für Jugendliche unter 18 Jahren</li>
+																<li>10,- EUR für Studenten</li>
+																<li>30,- EUR für passive Spieler</li>
+																<li>40,- EUR für aktive Spieler **</li>
+																<li>60,- EUR für Paare</li>
+														</ul>
+														Snooker
+														<ul>
+																<li>50,-EUR für Erwachsene Spieler</li>
+														</ul>
+														<small>** aktiv bedeutet, am Ligaspielbetrieb teilnehmend</small>
+														</ul>
+														</p>
+												</div>
 										</div>
-								</div>
-						</div>
-						<div class="w3-container">
-								<div class="w3-content fab-content-width">
-										<div class="w3-panel w3-leftbar w3-light-grey">
-												<p>
-												<span class="fab-title">MONATLICHE MITGLIEDSBEITRÄGE</span><br>
-												Pool Billard
-												<ul>
-														<li>10,- EUR für Jugendliche unter 18 Jahren</li>
-														<li>10,- EUR für Studenten</li>
-														<li>30,- EUR für passive Spieler</li>
-														<li>40,- EUR für aktive Spieler **</li>
-														<li>60,- EUR für Paare</li>
-												</ul>
-
-												Snooker
-												<ul>
-														<li>50,-EUR für Erwachsene Spieler</li>
-												</ul>
-
-												<small>** aktiv bedeutet, am Ligaspielbetrieb teilnehmend</small>
-												</ul>
-												</p>
+										<div style="flex: 1"> 
+												<div class="w3-panel w3-leftbar w3-light-grey" style="min-height:380px">
+														<p>
+														<span class="fab-title">ZAHLEN UND FAKTEN</span><br>
+														<ul>
+																<li>24 Stunden Zugang für Vereinsmitglieder</li>
+																<li>1 Snooker- und 3 Pool Tische</li>
+																<li>hochwertiges Spielmaterial</li>
+																<li>Parkplätze vor der Tür</li>
+																<li>Trainer und Jugendtrainer</li>
+																<li>Sonderkonditionen für Jugendliche</li>
+																<li>kostengünstige Getränke und Speisen</li>
+																<li>Vereinstraining</li>
+																<li>Ligabetrieb</li>
+																<li>freies WLAN im Vereinsheim</li>
+														</ul>
+														</p>
+												</div>
 										</div>
 								</div>
 						</div>
@@ -351,18 +347,18 @@ body, html {
 								});
 						}
 
-						function closeTopNav() {
-								const x = document.getElementById("topNav");
-								x.className = "topnav";
-						}
-						function toggleTopNav() {
-								const x = document.getElementById("topNav");
-								if (x.className === "topnav") {
-										x.className += " responsive";
-								} else {
-										x.className = "topnav";
-								}
-						}
+function closeTopNav() {
+		const x = document.getElementById("topNav");
+		x.className = "topnav";
+}
+function toggleTopNav() {
+		const x = document.getElementById("topNav");
+		if (x.className === "topnav") {
+				x.className += " responsive";
+		} else {
+				x.className = "topnav";
+		}
+}
 				</script>
 				<script async
 						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANZ01Pxsor8k7sfXZ27kiS_-b3i7G3aps&callback=initMap">
