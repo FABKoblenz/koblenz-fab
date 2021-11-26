@@ -14,7 +14,7 @@ body, html {
 		background-size: cover;
 		/* https://pixabay.com/photos/pool-table-green-flat-pool-sport-1283911/ */
 		background-image: url("/assets/pool-table.jpg");
-		min-height: 75%;
+		min-height: 60%;
 }
 
 .menu {
@@ -25,6 +25,14 @@ body, html {
 		background-color: rgba(255, 255, 255, 0.6);
 		border-radius: 10px;
 		padding: 30px;
+}
+
+.fab-page-title-logo {
+		background-image: url("/assets/fab-logo.jpg");
+}
+
+.fab-page-title-text {
+		font-size: min(6vw, 70px); 
 }
 
 .fab-title {
@@ -56,20 +64,20 @@ body, html {
 		animation-name: fade;
 		animation-duration: 1.5s;
 }
-		  @-webkit-keyframes fade {
-				  from {opacity: .4} 
-				  to {opacity: 1}
-		  }
+						  @-webkit-keyframes fade {
+								  from {opacity: .4} 
+								  to {opacity: 1}
+						  }
 
-		  @keyframes fade {
-				  from {opacity: .4} 
-				  to {opacity: 1}
-		  }
+						  @keyframes fade {
+								  from {opacity: .4} 
+								  to {opacity: 1}
+						  }
 
-		  /* On smaller screens, decrease text size */
-		  @media only screen and (max-width: 300px) {
-				  .text {font-size: 11px}
-		  }
+						  /* On smaller screens, decrease text size */
+						  @media only screen and (max-width: 300px) {
+								  .text {font-size: 11px}
+						  }
 		</style>
 		<body>
 				<!-- Links (sit on top) -->
@@ -97,8 +105,12 @@ body, html {
 				<!-- Header with image -->
 				<header class="bgimg w3-display-container w3-grayscale-min" id="home">
 						<div class="w3-display-middle w3-center fab-page-title">
-								<img>
-								<span class="fab-title" style="font-size: 8vw; ">Billard Team FAB Koblenz e.V.</span>
+								<div id="image" style="display:inline;">
+										<img src="/assets//fab-logo.jpg"/>
+								</div>
+								<div id="texts" style=""> 
+										<span class="fab-title fab-page-title-text" style="">Billard Team FAB Koblenz e.V.</span>
+								</div>
 						</div>
 				</header>
 
@@ -132,87 +144,82 @@ body, html {
 										</div>
 								</div>
 						</div>
-						<div class="slideshow-container">
-								<div class="slide">
-										<div class="numbertext">1 / 3</div>
-										<img src="/assets/fab-slideshow/img1.jpg" style="width:100%">
-								</div>
-
-								<div class="slide">
-										<div class="numbertext">2 / 3</div>
-										<img src="/assets/fab-slideshow/img2.jpg" style="width:100%">
-								</div>
-
-								<div class="slide">
-										<div class="numbertext">3 / 3</div>
-										<img src="/assets/fab-slideshow/img3.jpg" style="width:100%">
-								</div>
+				</div>
+				<div class="slideshow-container">
+						<div class="slide">
+								<div class="numbertext">1 / 3</div>
+								<img src="/assets/fab-slideshow/img1.jpg" style="width:100%">
 						</div>
 
+						<div class="slide">
+								<div class="numbertext">2 / 3</div>
+								<img src="/assets/fab-slideshow/img2.jpg" style="width:100%">
+						</div>
+
+						<div class="slide">
+								<div class="numbertext">3 / 3</div>
+								<img src="/assets/fab-slideshow/img3.jpg" style="width:100%">
+						</div>
 				</div>
-				<br>
 
-				<div style="text-align:center">
-						<span class="dot"></span> 
-						<span class="dot"></span> 
-						<span class="dot"></span> 
-				</div>
 
-				<div class="w3-container" id="mitgliedschafft">
-						<div class="w3-content" style="max-width:700px">
-								<h5 class="w3-center w3-padding-32"><span class="w3-wide fab-title fab-section-title">Du möchtest Mitglied beim FAB werden?</span></h5>
-								<p>
-								Das ist eine gute Entscheidung, denn neben den ganzen <b>Vorteilen</b> die <b>Billardsport</b> für dich bringt, bietet dir eine Mitgliedschaft beim FAB einiges an tollen Möglichkeiten.<br>
-								<br>
-								ju hast die Möglichkeit am regelmäßigen Training teilzunehmen, spielst auf Wunsch in verschiedenen Mannschaften im Rheinland-Pfäzer Ligabetrieb mit, kannst verschiedene Einzelwettkämpfe bestreiten und trittst, wenn du willst bei einigen Turnieren an.<br>
-								<br>
-								<b>Wettkampf?</b> Das ist nichts für dich! Das FAB bietet neben dem sportlichen Aspekt auch einiges an Flair. Durch die eigenen Vereinsräume setzen wir bei Spielmaterial auf Top Qualität und Pflege, <b>die Atmosphäre</b> in unseren Vereinsräumen ist <b>auf Billard abgestimmt</b> und verleitet den ein oder anderen dazu lange Sessions zu spielen. Triff dich mit Gleichgesinnten zum Training und knüpfe neue Bekanntschaften aus denen sich, aus guter Erfahrung, auch viele echte Freundschaften entwickeln können.<br>
-								<br>
-								Jeder <b>FABianer (Vollmitglied)</b> erhält nach 3 Monaten einen <b>Schlüssel zu den Vereinsräumen</b> und kann somit jederzeit seinem Drang nach Billardsport oder Spiel, 24 Stunden / 7 Tage die Woche, freien Lauf lassen.<br>
-								<br>
-								Was musst du tun um Mitglied beim FAB zu werden?<br>
-								<br>
-								<b>Wir empfehlen dir</b>, erst mal bei uns vorbei zu schnuppern. Schau dir in aller Ruhe unsere Räumlichkeiten an und lass alles ein bisschen auf Dich wirken.Ein gute Möglichkeit hierzu ist z.B. unser <b>freies Schnuppertraining</b>, welches jeden <b>Samstag zwischen 10:00 Uhr und 12:00</b> Uhr stattfindet.Du kannst samstags nicht? Dann nimm einfach Kontakt mit uns auf und wir finden schnell einen passenden Termin für Dich!<br>
-								<br>
-								Wir <b>freuen uns auf Dich!</b><br>
-								<div class="w3-panel w3-leftbar w3-light-grey">
+				<div class="w3-sand w3-grayscale w3-large">
+						<div class="w3-container" id="mitgliedschafft">
+								<div class="w3-content" style="max-width:700px">
+										<h5 class="w3-center w3-padding-32"><span class="w3-wide fab-title fab-section-title">Du möchtest Mitglied beim FAB werden?</span></h5>
 										<p>
-										<span class="fab-title">ZAHLEN UND FAKTEN</span><br>
-										<ul>
-												<li>24 Stunden Zugang für Vereinsmitglieder</li>
-												<li>1 Snooker- und 3 Pool Tische</li>
-												<li>hochwertiges Spielmaterial</li>
-												<li>Parkplätze vor der Tür</li>
-												<li>Trainer und Jugendtrainer</li>
-												<li>Sonderkonditionen für Jugendliche</li>
-												<li>kostengünstige Getränke und Speisen</li>
-												<li>Vereinstraining</li>
-												<li>Ligabetrieb</li>
-												<li>freies WLAN im Vereinsheim</li>
-										</ul>
-										</p>
-								</div>
-								<div class="w3-panel w3-leftbar w3-light-grey">
-										<p>
-										<span class="fab-title">MONATLICHE MITGLIEDSBEITRÄGE</span><br>
-										Pool Billard
-										<ul>
-												<li>10,- EUR für Jugendliche unter 18 Jahren</li>
-												<li>10,- EUR für Studenten</li>
-												<li>30,- EUR für passive Spieler</li>
-												<li>40,- EUR für aktive Spieler **</li>
-												<li>60,- EUR für Paare</li>
-										</ul>
+										Das ist eine gute Entscheidung, denn neben den ganzen <b>Vorteilen</b> die <b>Billardsport</b> für dich bringt, bietet dir eine Mitgliedschaft beim FAB einiges an tollen Möglichkeiten.<br>
+										<br>
+										ju hast die Möglichkeit am regelmäßigen Training teilzunehmen, spielst auf Wunsch in verschiedenen Mannschaften im Rheinland-Pfäzer Ligabetrieb mit, kannst verschiedene Einzelwettkämpfe bestreiten und trittst, wenn du willst bei einigen Turnieren an.<br>
+										<br>
+										<b>Wettkampf?</b> Das ist nichts für dich! Das FAB bietet neben dem sportlichen Aspekt auch einiges an Flair. Durch die eigenen Vereinsräume setzen wir bei Spielmaterial auf Top Qualität und Pflege, <b>die Atmosphäre</b> in unseren Vereinsräumen ist <b>auf Billard abgestimmt</b> und verleitet den ein oder anderen dazu lange Sessions zu spielen. Triff dich mit Gleichgesinnten zum Training und knüpfe neue Bekanntschaften aus denen sich, aus guter Erfahrung, auch viele echte Freundschaften entwickeln können.<br>
+										<br>
+										Jeder <b>FABianer (Vollmitglied)</b> erhält nach 3 Monaten einen <b>Schlüssel zu den Vereinsräumen</b> und kann somit jederzeit seinem Drang nach Billardsport oder Spiel, 24 Stunden / 7 Tage die Woche, freien Lauf lassen.<br>
+										<br>
+										Was musst du tun um Mitglied beim FAB zu werden?<br>
+										<br>
+										<b>Wir empfehlen dir</b>, erst mal bei uns vorbei zu schnuppern. Schau dir in aller Ruhe unsere Räumlichkeiten an und lass alles ein bisschen auf Dich wirken.Ein gute Möglichkeit hierzu ist z.B. unser <b>freies Schnuppertraining</b>, welches jeden <b>Samstag zwischen 10:00 Uhr und 12:00</b> Uhr stattfindet.Du kannst samstags nicht? Dann nimm einfach Kontakt mit uns auf und wir finden schnell einen passenden Termin für Dich!<br>
+										<br>
+										Wir <b>freuen uns auf Dich!</b><br>
+										<div class="w3-panel w3-leftbar w3-light-grey">
+												<p>
+												<span class="fab-title">ZAHLEN UND FAKTEN</span><br>
+												<ul>
+														<li>24 Stunden Zugang für Vereinsmitglieder</li>
+														<li>1 Snooker- und 3 Pool Tische</li>
+														<li>hochwertiges Spielmaterial</li>
+														<li>Parkplätze vor der Tür</li>
+														<li>Trainer und Jugendtrainer</li>
+														<li>Sonderkonditionen für Jugendliche</li>
+														<li>kostengünstige Getränke und Speisen</li>
+														<li>Vereinstraining</li>
+														<li>Ligabetrieb</li>
+														<li>freies WLAN im Vereinsheim</li>
+												</ul>
+												</p>
+										</div>
+										<div class="w3-panel w3-leftbar w3-light-grey">
+												<p>
+												<span class="fab-title">MONATLICHE MITGLIEDSBEITRÄGE</span><br>
+												Pool Billard
+												<ul>
+														<li>10,- EUR für Jugendliche unter 18 Jahren</li>
+														<li>10,- EUR für Studenten</li>
+														<li>30,- EUR für passive Spieler</li>
+														<li>40,- EUR für aktive Spieler **</li>
+														<li>60,- EUR für Paare</li>
+												</ul>
 
-										Snooker
-										<ul>
-												<li>50,-EUR für Erwachsene Spieler</li>
-										</ul>
+												Snooker
+												<ul>
+														<li>50,-EUR für Erwachsene Spieler</li>
+												</ul>
 
-										<small>** aktiv bedeutet, am Ligaspielbetrieb teilnehmend</small>
-										</ul>
-										</p>
+												<small>** aktiv bedeutet, am Ligaspielbetrieb teilnehmend</small>
+												</ul>
+												</p>
 
+										</div>
 								</div>
 						</div>
 				</div>
@@ -230,17 +237,12 @@ showSlides();
 function showSlides() {
 		var i;
 		var slides = document.getElementsByClassName("slide");
-		var dots = document.getElementsByClassName("dot");
 		for (i = 0; i < slides.length; i++) {
 				slides[i].style.display = "none";  
 		}
 		slideIndex++;
 		if (slideIndex > slides.length) {slideIndex = 1}
-		for (i = 0; i < dots.length; i++) {
-				dots[i].className = dots[i].className.replace(" active", "");
-		}
 		slides[slideIndex-1].style.display = "block";  
-		dots[slideIndex-1].className += " active";
 		setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 				</script>
