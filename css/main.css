@@ -12,11 +12,11 @@ body, html {
 		background-position: center;
 		background-size: cover;
 		/* https://pixabay.com/photos/pool-table-green-flat-pool-sport-1283911/ */
-		background-image: url("/assets/pool-table-00.jpg");
+		/* background-image: url("/assets/pool-table-00.jpg"); */
 		/* https://pixabay.com/photos/pool-balls-cue-game-fun-activity-1593845/ */
 		background-image: url("/assets/pool-table-01.jpg");
 		/* https://pixabay.com/photos/billiards-game-to-play-table-1829883/ */
-		background-image: url("/assets/pool-table-02.jpg");
+		/* background-image: url("/assets/pool-table-02.jpg"); */
 		min-height: max(50%, 550px);
 }
 
