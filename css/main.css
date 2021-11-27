@@ -18,6 +18,7 @@ body, html {
 		/* https://pixabay.com/photos/billiards-game-to-play-table-1829883/ */
 		/* background-image: url("/assets/pool-table-02.jpg"); */
 		min-height: max(50%, 550px);
+		height: max(50%, 550px);
 }
 
 .fab-page-title {
