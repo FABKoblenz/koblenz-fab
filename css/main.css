@@ -67,9 +67,10 @@ body, html {
 		.right-left-direction {
 				flex-direction: column-reverse;
 		}
-		.w3-container {
-				scroll-margin-top: 50px;
-		}
+}
+
+.w3-container {
+		scroll-margin-top: 50px;
 }
 
 .topnav a {
